@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablero | Sports Club Bonachón</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Publicidad lateral izquierda -->
+        <div class="publicidad lateral izquierda">
+            <video src="media/Publicidad10.mp4" class="publi-item activo" muted loop></video>
+            <video src="media/Publicidad11.mp4" class="publi-item" muted loop></video>
+            <video src="media/Publicidad12.mp4" class="publi-item" muted loop></video>
+            <video src="media/Publicidad13.mp4" class="publi-item" muted loop></video>
+        </div>
+
+        <!-- Sección Principal -->
+        <div class="sección-principal">
+            <div class="espacio-superior">
+                <h1>Sports Club Bonachón</h1>
+            </div>
+
+            <div class="tablero">
+                <div class="jugadores">
+                    <!-- Jugador 1-->
+                    <div class="jugador" id="jugador1">
+                        <!-- Sets Jugador 1-->
+                        <div class="sets" id="sets1">
+                            <div class="cuadro-set"></div>
+                            <div class="cuadro-set"></div>
+                        </div>
+
+                        <div class="nombres">
+                            <input type="text" id="nombre1" value="Jugador 1">
+                            <input type="text" id="nombre1b" class="nombre-pareja oculto" value="Jugador 1B">
+                        </div>
+
+                        <div class="puntaje" id="puntaje1">0</div>
+
+                        <div class="controles">
+                            <button onclick="restarPunto(1)">−1</button>
+                            <button onclick="sumarPunto(1)">+1</button>
+                        </div>
+                    </div>
+
+                    <div class="jugador" id="jugador2">
+                        <!-- Sets Jugador 2-->
+                        <div class="sets" id="sets2">
+                            <div class="cuadro-set"></div>
+                            <div class="cuadro-set"></div>
+                        </div>
+
+                        <div class="nombres">
+                            <input type="text" id="nombre2" value="Jugador 2">
+                            <input type="text" id="nombre2b" class="nombre-pareja oculto" value="Jugador 2B">
+                        </div>
+
+                        <div class="puntaje" id="puntaje2">0</div>
+
+                        <div class="controles">
+                            <button onclick="restarPunto(2)">−1</button>
+                            <button onclick="sumarPunto(2)">+1</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acciones">
+                    <button onclick="reiniciarPuntuaciones()">Reiniciar Set</button>
+                    <button onclick="reiniciarPartido()">Reiniciar Partido</button>
+                </div>
+
+                <div class="modo-juego">
+                    <label>
+                        <input type="checkbox" id="modoParejas" onchange="toggleParejas()" />Juego por parejas
+                    </label>
+                </div>
+            </div>
+
+            <div class="espacio-inferior-animado">
+                <p>Disfruta las promociones que tenemos para ti</p>
+            </div>
+        </div>
+
+        <!-- Publicidad lateral derecha -->
+        <div class="publicidad lateral derecha">
+            <video src="media/Publicidad13.mp4" class="publi-item activo" muted loop></video>
+            <video src="media/Publicidad12.mp4" class="publi-item" muted loop></video>
+            <video src="media/Publicidad11.mp4" class="publi-item" muted loop></video>
+            <video src="media/Publicidad10.mp4" class="publi-item" muted loop></video>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
