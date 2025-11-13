@@ -165,7 +165,7 @@ button:hover {
     animation: desplazar-texto 20s linear infinite;
 }
 
-.publicidad {
+.seccion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,12 +173,12 @@ button:hover {
     position: relative;
 }
 
-.publicidad.lateral {
+.seccion.lateral {
     width: 20%;
     height: 90%;
 }
 
-.publi-item {
+.media-item {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -192,7 +192,7 @@ button:hover {
     border: var(--plateado) 2px solid;
 }
 
-.publi-item.activo {
+.media-item.activo {
     opacity: 1;
     z-index: 1;
 }
