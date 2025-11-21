@@ -55,10 +55,14 @@ function reiniciarPuntuaciones() {
 // Reiniciar partido completo
 function reiniciarPartido() {
     reiniciarPuntuaciones();
-    setsGanados[0] = 0;
+    setsGanados[0] = 0; 
     setsGanados[1] = 0;
     actualizarSets(1);
     actualizarSets(2);
+}
+
+// Reiniciar nombres
+function reiniciarNombres() {
     document.getElementById("nombre1").value = "Jugador 1";
     document.getElementById("nombre1b").value = "Jugador 1B";
     document.getElementById("nombre2").value = "Jugador 2";
